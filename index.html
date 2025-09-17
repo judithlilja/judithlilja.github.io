@@ -1,68 +1,53 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5H3PH9NP');
-  </script>
-  <!-- End Google Tag Manager -->
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Judith Lilja</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
-    .background {
-      background: url("Judith Lilja (4).png") no-repeat center center;
-      background-size: cover;
-      height: 100vh;
-      width: 100%;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end; /* placerar innehållet längst ner */
-    }
-
-    .see-more-text {
-      font-family: Georgia, serif; /* matchar stilen */
-      font-size: 1.2rem;
-      color: #fdf046; /* gul text */
-      margin-bottom: 60px; /* flytta upp/ner tills det matchar exakt */
-      text-decoration: none;
-      letter-spacing: normal;
-    }
-
-    .see-more-text:hover {
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judith Lilja Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2eee5;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 506.2225%; /* Matchar Canva-värdet */
+            padding-bottom: 0;
+            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+            margin-top: 1.6em;
+            margin-bottom: 0.9em;
+            overflow: hidden;
+            border-radius: 8px;
+            will-change: transform;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        .email-link {
+            display: block;
+            margin-top: 10px;
+            color: #000000;
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H3PH9NP"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <div class="background">
-    <!-- Klickbar "See More"-text som länkar till din LinkedIn -->
-    <a class="see-more-text" 
-       href="https://www.linkedin.com/in/judith-lilja-9a2223208/" 
-       target="_blank" 
-       rel="noopener noreferrer">
-       See More
-    </a>
-  </div>
+    <div class="iframe-container">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGy5gjHeHc/rFkzpZ5i_mZiw8MEbQDi1w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+    </div>
+    <a href="mailto:judith@example.com" class="email-link">judith@example.com</a>
 </body>
 </html>
-

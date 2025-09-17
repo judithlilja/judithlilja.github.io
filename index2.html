@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Judith Lilja – Portfolio</title>
+  <style>
+    /* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #eae2d1;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #fdee00; /* gul rubrik */
+      margin: 0.5em 0;
+    }
+
+    .section {
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 4em 2em;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('hero.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fdee00;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 0.5em;
+    }
+
+    /* Who Am I */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2em;
+    }
+    .about img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+    .about-text {
+      flex: 1;
+    }
+
+    /* Quote Section */
+    .quote {
+      position: relative;
+      background: url('quote.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0 2em;
+    }
+    .quote span {
+      font-style: italic;
+      color: #fdee00;
+    }
+
+    /* Education */
+    .education h2 {
+      text-align: left;
+    }
+    .school {
+      margin-bottom: 2em;
+    }
+    .school h3 {
+      color: #fdee00;
+      margin-bottom: 0.2em;
+    }
+
+    /* CV Coming Soon */
+    .cv {
+      position: relative;
+      height: 50vh;
+      background: url('cv.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cv h2 {
+      font-size: 4rem;
+      transform: rotate(-15deg);
+      color: #fdee00;
+    }
+
+    /* Toolbox */
+    .toolbox {
+      text-align: center;
+    }
+    .toolbox h2 {
+      margin-bottom: 1em;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5em;
+      text-align: left;
+    }
+    .tools-grid h3 {
+      color: #000;
+      font-size: 1.1rem;
+      margin-bottom: 0.5em;
+    }
+
+    /* Projects */
+    .projects {
+      text-align: center;
+    }
+    .projects h2 {
+      margin-bottom: 1em;
+    }
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+    .projects-grid img {
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero p { font-size: 1.2rem; }
+      .cv h2 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>JUDITH<br>LILJA</h1>
+      <p>Growth Marketer</p>
+    </div>
+  </section>
+
+  <!-- Who am I -->
+  <section class="section about">
+    <div class="about-text">
+      <h2>WHO AM I?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Fusce euismod, nisi vel consectetur cursus, nisl nunc aliquet nunc, 
+      vitae aliquet nunc nisl vitae nunc.</p>
+    </div>
+    <img src="about.jpg" alt="About me">
+  </section>
+
+  <!-- Education -->
+  <section class="section education">
+    <h2>EDUCATION</h2>
+    <div class="school">
+      <h3>Berghs School of Communication</h3>
+      <p>Growth Marketing</p>
+    </div>
+    <div class="school">
+      <h3>Uppsala University</h3>
+      <p>Bachelor in Business and Economics</p>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote">
+    <p>Growth marketing is not about louder messages, it’s about smarter moves.<br>
+    <span>It’s the difference between existing budget and fueling real business growth.</span></p>
+  </section>
+
+  <!-- CV Coming Soon -->
+  <section class="cv">
+    <h2>CV COMING SOON</h2>
+  </section>
+
+  <!-- Toolbox -->
+  <section class="section toolbox">
+    <h2>Toolbox</h2>
+    <div class="tools-grid">
+      <div>
+        <h3>Visual design</h3>
+        <p>Canva<br>Photoshop<br>Illustrator<br>Figma</p>
+      </div>
+      <div>
+        <h3>Coding / Code Management</h3>
+        <p>GitHub<br>Visual Studio Code<br>Node.js</p>
+      </div>
+      <div>
+        <h3>CRM</h3>
+        <p>Lime<br>Hubspot<br>Microsoft D365</p>
+      </div>
+      <div>
+        <h3>Web Analytics</h3>
+        <p>GA4<br>Google Tag Manager</p>
+      </div>
+      <div>
+        <h3>Reporting</h3>
+        <p>Looker Studio<br>Excel</p>
+      </div>
+      <div>
+        <h3>Project Management</h3>
+        <p>Notion<br>Miro<br>Slack<br>Teams</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <img src="proj1.jpg" alt="Project 1">
+      <img src="proj2.jpg" alt="Project 2">
+      <img src="proj3.jpg" alt="Project 3">
+      <img src="proj4.jpg" alt="Project 4">
+    </div>
+  </section>
+
+</body>
+</html>
